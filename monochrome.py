@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def pastel_monochrome(image_path):
     # Load the image
     image = cv2.imread(image_path)
@@ -16,4 +17,12 @@ def pastel_monochrome(image_path):
     # Combine the pastel and monochrome images using weighted addition
     output = cv2.addWeighted(pastel, 0.5, monochrome, 0.5, 0)
 
-    return output
+    # return output
+
+    # Show the pixelated image
+    cv2.imshow('mono', output)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+
+pastel_monochrome('image.jpg')

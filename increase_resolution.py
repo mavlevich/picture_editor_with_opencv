@@ -17,7 +17,7 @@ def increase_resolution(image_path):
     cv2.waitKey(0)
 
     # Save the result to a file
-    cv2.imwrite('increased_resolution.jpg', new_img)
+    # cv2.imwrite('increased_resolution.jpg', new_img)
 
 
 increase_resolution('image2.jpg')
