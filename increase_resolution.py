@@ -1,5 +1,6 @@
 import cv2
 
+
 def increase_resolution(image_path):
     # Load image from file
     img = cv2.imread(image_path)

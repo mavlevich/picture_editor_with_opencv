@@ -1,5 +1,6 @@
 import cv2
 
+
 def reduce_brightness(img, percentage):
     """
     Reduces the brightness of an image by a specified percentage.

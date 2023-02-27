@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def add_warmer_shades(image, amount):
     image = cv2.imread(image)
 
