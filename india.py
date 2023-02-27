@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def add_india_atmosphere(image):
     # convert the image to LAB color space
     lab_image = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
@@ -22,7 +23,6 @@ def add_india_atmosphere(image):
     result = cv2.convertScaleAbs(result, alpha=1.5, beta=0)
 
     return result
-
 
 
 # read the image as a numpy array
